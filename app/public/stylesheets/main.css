@@ -1,0 +1,386 @@
+/*---------- DESKTOP NAVBAR ----------*/
+.desktopNavbar {
+    display: block;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: #EBFFDC;
+    overflow: hidden;
+}
+
+.desktopNavbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.desktopNavbar img {
+    height: 70px;
+}
+
+.desktopNavbar li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.desktopNavbar li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.desktopNavbar li a {
+    display: block;
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.desktopNavbar li a:hover {
+    color: #01415B;
+    transition: all 0.2s;
+}
+
+.navbar {
+    visibility: collapse;
+    height: 0px;
+}
+
+.hamburger {
+    visibility: collapse;
+}
+
+.topbar {
+    display: none;
+}
+
+/*---------- GENERAL STYLES ----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    line-height: 1.5;
+    transition: 200ms;
+}
+
+body {
+    /* height: 100vh; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+    color: #019587;
+    /* overflow: hidden; */
+}
+
+h1 {
+    margin: 0.5em;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    /* text-decoration: underline; */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/*---------- STYLES FOR FORMS ----------*/
+
+.form-group {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #76bca5;
+    background-color: white;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: #f4fffb;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    border-radius: 7px;
+    padding: 5px;
+    border: 2px solid #56635e;
+}
+
+/*---------- STYLES FOR CONTENT DIVS ----------*/
+
+.content {
+    padding: 20px;
+    padding-bottom: 90px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    overflow: scroll;
+}
+
+.content-div {
+    margin: 20px 50px;
+}
+
+.khmer, .english {
+    margin: 40px 0px;
+}
+
+.khmer {
+    display: inherit;
+}
+.english {
+    display: none;
+}
+
+.signup-lan {
+    margin: 0px;
+}
+
+#content-sign-in {
+    align-items: center;
+    /* width: 20%; */
+}
+
+#content-sign-up {
+    align-items: center;
+}
+
+.error-message {
+    color: red;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.content a {
+    color: #76bca5;
+}
+.goog-te-combo {
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+}
+
+.container {
+    position: relative;
+    padding: 5%;
+    width: 70%;
+    overflow: auto;
+    border-radius: 20px;
+    border: 2px solid #76bca5;
+    background-color: #e0faf1;
+}
+
+#container-wallet {
+    position: relative;
+    padding: 5%;
+    overflow: auto;
+    border-radius: 20px;
+    border: 2px solid #76bca5;
+    background-color: #e0faf1;
+    text-align: center;
+}
+
+#container-parking {
+    text-align: left;
+}
+
+/*---------- STYLES FOR BUTTONS ----------*/
+
+/* Basic button style */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #76bca5;
+    border-radius: 5px;
+    background-color: #76bca5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #4c9a7f;
+    border-color: #4c9a7f;
+}
+
+/* Button focus effect */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #76bca5;
+}
+
+/* Primary button style */
+.primary-button {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Primary button hover effect */
+.primary-button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.reserve-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clear-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty {
+    background-color: red;
+    border-color: red;
+}
+
+
+.language-button {
+    width: 100%;
+    padding: 2px;
+    /* margin-top: 20px; */
+}
+.signup-language-button {
+    width: 50%;
+}
+
+.alert {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+/*---------- STYLES FOR MOBILE NAVBAR ----------*/
+
+@media only screen and (max-width: 768px) {
+    .desktopNavbar {
+        visibility: hidden;
+        height: 0px;
+        padding: 0;
+    }
+
+    .desktopNavbar ul {
+        visibility: inherit;
+    }
+
+    .topbar img {
+        height: 70px;
+    }
+
+    .topbar {
+        visibility: visible;
+        background-color: #EBFFDC;
+        height: 80px;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        visibility: visible;
+        cursor: pointer;
+        float: right;
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+
+    #bar1, #bar2, #bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #155285;
+        margin: 6px 0px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .change #bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .navbar {
+        position: fixed;
+        height: 0;
+        width: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        height: calc(100vh - 80px);
+        background-color: #BFD986;
+        z-index: 20;
+        visibility: visible;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar ul {
+        padding-top: 15px;
+        margin-top: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .navbar img {
+        height: 70px;
+    }
+
+    .navbar ul li {
+        line-height: 60px;
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        display: flex;
+        height: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        color: #019587;
+        white-space: wrap;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .navigation-link ul {
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 40px;
+    }
+}
